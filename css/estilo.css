@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.carousel{
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    margin: 100px auto 0;
+    overflow: hidden;
+
+}
+
+img{
+    animation: slider 12s infinite steps(3);
+    width: 1000px;
+    height: 500px;
+
+    
+
+}
+
+
+@keyframes slider{
+    0%,
+    33.33% {transform: translateX(0);}
+
+    33.34%,
+    66.66% {transform: translateX(-1000px);}
+
+    66.67%,
+    100% {transform: translateX(-2000px);}
+
+}
